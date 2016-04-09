@@ -1,18 +1,35 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: Connect
+permalink: /connect/
 ---
+## via ssh
 
+Connect with ssh: `ssh user@bongo.zone`. The `.ssh/known_hosts` should look like.
 
-An even more spectacular theory is that Gogo is Adlai Stevenson, deceased former governor of Illinois, and twice-failed presidential candidate (1952-1956). There was even disturbingly formidable evidence for this matter (all the following evidence is taken from GameFAQs), until certain fans of Final Fantasy VI were unable to find such quotes of Stevenson's and therefore concluded the theory was false, a hoax.
+```
+# bongo.zone:22 SSH-2.0-OpenSSH_7.2
+bongo.zone ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC+JwIDbYFvyS5xKAMs83LCqk/Ld1DwdfKcFck7AkKOfrcZxHUlXrqC0g8tPS9dD0naksRXsCDeEuwjZJGjzvOLxIyPHFGUrjiuUgLRpjF7lW0pEPyR0s7F7pno6eLPSABaNGFwMIJK6hqZXwrr0DwGTdYUrQ6BN/hHYilzOpKPkf29XRckTBKPUWP2VCzl3voB/o8fhEagQr7OCwOaLrZEAyzYp8YiQUXCIru3n9nWcLynEtZJWIe8SyTNAaTTiiVVffCLQbykI7FS/O5uyyS07nu5WkcTerf0Te3z1AlVC9TAG7SRXZlL7fum6KYKlImvESGMZjzusaKtpVaStof/
+bongo.zone ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBLXucRj+5hh1f1YylWwKQCRz9Q2w7IJgph3VJG2hZrw0y1k5KsmQYzd0c3sFRC34VPBlo0pA8m7hfF17eyDOvgM=
+bongo.zone ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIP6YYx6ASdFZ937jDldBEA7KXGKEbLqfhO4ALq1YSO00
+cqxpkm2q2avequbp.onion ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC+JwIDbYFvyS5xKAMs83LCqk/Ld1DwdfKcFck7AkKOfrcZxHUlXrqC0g8tPS9dD0naksRXsCDeEuwjZJGjzvOLxIyPHFGUrjiuUgLRpjF7lW0pEPyR0s7F7pno6eLPSABaNGFwMIJK6hqZXwrr0DwGTdYUrQ6BN/hHYilzOpKPkf29XRckTBKPUWP2VCzl3voB/o8fhEagQr7OCwOaLrZEAyzYp8YiQUXCIru3n9nWcLynEtZJWIe8SyTNAaTTiiVVffCLQbykI7FS/O5uyyS07nu5WkcTerf0Te3z1AlVC9TAG7SRXZlL7fum6KYKlImvESGMZjzusaKtpVaStof/
+cqxpkm2q2avequbp.onion ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBLXucRj+5hh1f1YylWwKQCRz9Q2w7IJgph3VJG2hZrw0y1k5KsmQYzd0c3sFRC34VPBlo0pA8m7hfF17eyDOvgM=
+cqxpkm2q2avequbp.onion ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIP6YYx6ASdFZ937jDldBEA7KXGKEbLqfhO4ALq1YSO00
+```
 
-A quote from Adlai Stevenson, taken from his book "What I Think": "I am always amazed by the resistance offered to progress, even the most inocous progress. Imagine, if you will, jumping from one rickety bridge to another, with blind men running back and forth trying to push you off, and you will have some idea what legislating progress is like. The good news is that if you're pushed off, you can always climb back up and try again.". This quote is disturbing in its uncanny likeness to Final Fantasy VI: in order to reach Gogo, the player must navigate his way through several bridges in an underground cavern, jumping from one to another, while strange men in green clothing move around, knocking the character off if they touch it, making the process begin again.
+## via tor
 
-When asked about his baldness by an NBC reporter in 1952, Stevenson responded: "I suppose I could wear a hat, but then my teeth would fall out to spite me. I could get false ones, but doubtless then I would get fat just to prove my teeth work. The easiest course is to drape my whole body in robes and shawls and hope no one recognizes my eyes". Gogo is draped in multicolored robes and shawls, and his/her face is barely distinguishable.
+[http://cqxpkm2q2avequbp.onion](http://cqxpkm2q2avequbp.onion)
 
-In another 1952 interview, Stevenson said: "President Eisenhower continues to amaze me. He appears to be an ungainly and graceless man, but when senator Robert Taft makes a move, no matter how ridiculous, Eisenhower copies it with the skill of French mime Marcel Marceau. I haven't achieved such levels of mimicry with my own party, but I'm working on it". This requires almost no explanation: Gogo is a mime with near-supernatural skills.
+## via ssh over tor
 
-In another book, "Friends and Enemies", Stevenson said: "The legislature is a frightening thing. To this day the state capitol building seems to me a beast ready to swallow me up; the very walls and ceilings seem to crush you as you walk through it". The player's character must be swallowed by a beast, the Zone Eater, to reach the secret area Gogo is in.
+Setup [socat](http://www.dest-unreach.org/socat/) to use tor for onion urls. Add this to your `.ssh/config` and **add the above `.ssh/known_hosts` entry so you don't get MITM'd.**
 
-Stevenson gave a speech in Charlottesville in 1960, in which he said: "Today we are plunged into a battle that is familiar to us. The enemies and the problems are the same. But the terrain is different. The world around us has changed and shifted so much we no longer recognize it". The 'familiar battle' may be a reference to the struggle against Final Fantasy VI villain Kefka, and the enemies and problems truly are the same: Kefka is still the villain, and the problem is preventing Kefka from using the powers of the three statues. The terrain and world has changed, in Final Fantasy VI, Kefka succeeds in destroying the landscape, changing the World of Balance to the World of Ruin.
+```
+Host *.onion
+  ProxyCommand socat STDIO SOCKS4A:localhost:%h:%p,socksport=9150
+  StrictHostKeyChecking yes
+```
+*Change the port number to 9150 if you're using regular tor i.e. not the browser bundle.*
+
+Connect `ssh user@cqxpkm2q2avequbp.onion`
