@@ -8,7 +8,7 @@ description: New tools for synthesis, blah blah
 <input type="checkbox" id="mn-stats" class="margin-toggle">
 <span class="marginnote">
 
-Download time-limited beta version<br>
+<a href="https://github.com/bongozone/bongozone.github.io/releases">Download time-limited beta version</a><br>
 <em class="danger">requires VCVRack 0.6 built from Git; may not work with newer builds</em>
 
     <img src="images/pan-and-shift-beta-1.png" alt="Pan-and-shift β 1">
