@@ -52,8 +52,10 @@ When the input for a lane is disabled but the output is enabled, a clock trigger
 will advance the pattern normally, but the final memory cell of the lane will be
 copied into the input, causing <em>looping</em>.
 
-By passing the width control counterclockwise, past 12 o'clock, we engage
-<em>inverted channel width</em>. In the mode, the channel with grows inwards from
+By passing the width control counterclockwise, past 12 o'clock<label for="sn-neg" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-neg" class="margin-toggle"><span class="sidenote">
+  Or applying modulation such that the summed <em>width</em> voltage is negative.
+</span>,
+we engage <em>inverted channel width</em>. In the mode, the channel with grows inwards from
 the outer channels towards the center point.
 
 ## Modes
