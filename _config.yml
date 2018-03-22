@@ -7,11 +7,12 @@
 
 # Site settings
 title: Pulsum Quadratum
-email: contact@bongo.zone
+#email: contact@bongo.zone
+email: jon@jonwillia.ms
 description: When you Buchla afficionados talk about "Buchla Bongos"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://bongo.zone" # the base hostname & protocol for your site
-#twitter_username: bongo_zone 
+#twitter_username: bongo_zone
 #github_username: bongozone
 
 # Build settings

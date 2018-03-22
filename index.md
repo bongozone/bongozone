@@ -57,7 +57,7 @@ copied into the input, causing <em>looping</em>.
 The CV2 channel has three modes accessible from the panel switch:
 
 <span class="newthought">CV</span> mode causes the right channel to operate indentically
-to the left hand channel.
+to the left-hand channel.
 
 <span class="newthought">Velocity</span> mode outputs the stored CV while the
 input clock is high.
