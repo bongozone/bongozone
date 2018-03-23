@@ -1,7 +1,6 @@
 ---
 layout: page
 permalink: /
-description: New tools for synthesis, blah blah
 ---
 
 <figure>

@@ -22,5 +22,6 @@
 -->
 <h1 class="post-title">{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</h1>
 <p class="subtitle">
-  {% if page.description %}{{ page.description | escape }}{% endif %}
+  {% if page.description %}{{ page.description | escape }}{% else %}{{ site.description | escape }}{% endif %}
+
 </p>
