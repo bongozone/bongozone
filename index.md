@@ -19,13 +19,15 @@ description: New tools for synthesis, blah blah
 </figure>
 
 <p>
-<span class="newthought">Pan-and-Shift</span> is a four-voice, demuxing shift
+The Pulsum Quadratum <span class="newthought">Rhombic Shift Register</span> (RSR) is a four-voice, demuxing shift
 register for the <a href="http://www.vcvrack.com/">VCVRack</a> modular synthesis environment.
+The RSR consists of four looping “analog” shift registers whose inputs and outputs are
+switched via control voltage.
 By skillfully applying modulation, automatic variations upon
-source patterns may be generated. Using the Pan-and-Shift with a sequenced melody allows you to
+source patterns may be generated. Using the Rhombic Shift Register with a sequenced melody allows you to
 design complex arabesque patterns and arpeggiations.
 On the other hand, you need not need not use a sequencer or keyboard
-to play the Pan-and-Shift. Good results have been obtained with quantized stepped and random voltages,
+to play the RSR. Good results have been obtained with quantized stepped and random voltages,
 feedback patches and other unconventional sources.<label for="sn-westcoast" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-westcoast" class="margin-toggle">
 <span class="sidenote">
  Commonly termed “West coast synthesis”
@@ -34,7 +36,7 @@ feedback patches and other unconventional sources.<label for="sn-westcoast" clas
 
 ## Shift Registers
 
-The Pan-and-Shift has 4 independent “analog” shift
+The Rhombic Shift Register has 4 independent shift
  registers<label for="sn-asr" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-asr" class="margin-toggle"><span class="sidenote">Familiarity with basic <a href="https://sites.google.com/site/westcoastsynthesis/asr">analog shift register</a> operation will help comprehension of this document.</span>,
  denoted <strong>lanes</strong>. Each lane
 has two <strong>channels</strong>. The left-hand channel is intended for a pitch CV, for generating a melody.
@@ -47,9 +49,17 @@ value is greater than the left <em>length</em> value, the tap will be set to the
 of the lane. Independent values for the tap position and the lane length will be
 useful when utilizing the looping feature.
 
-## Pan-and-Scan Sections
+## Outputs
 
-Below the primary CV inputs there are two pan-and-scan<label for="sn-ps" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-ps" class="margin-toggle"><span class="sidenote">See Make Noise RxMx, Verbos Pan and Scan, Toppobrillo Mixiplexer, etc.</span>
+Each lane has a pair of outputs, the left corresponds to CV1, the right corresponds
+to CV2 with some logic applied.<label for="sn-seemodes" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-seemodes" class="margin-toggle"><span class="sidenote">
+  See <a href="#modes">Modes</a>
+</span>
+
+
+## Lane Selection Blocks
+
+Below the primary CV inputs there are two <strong>lane selection blocks</strong><label for="sn-ps" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-ps" class="margin-toggle"><span class="sidenote">Other modules with a similar control scheme include Make Noise RxMx, Verbos Pan and Scan, &amp; Toppobrillo Mixiplexer.</span>
 blocks, for the lane inputs and outputs respectively. By adjusting the position of these knobs and applying
 modulation, you may control which lanes are receiving input and which lanes are outputting.
 The state of each lane and its activity are indicated by the LEDs above and below each channel.
