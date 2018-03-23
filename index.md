@@ -12,7 +12,7 @@ description: New tools for synthesis, blah blah
   <em class="danger">requires VCVRack 0.6 built from Git; may not work with newer builds</em>
   </span>
   <label for="mn-exports-imports" class="margin-toggle">Photos</label><input type="checkbox" id="mn-exports-imports" class="margin-toggle"><span class="marginnote">
-  <img src="images/pan-and-shift-beta-1.png" alt="Pan-and-shift β 1">
+  <img src="images/rsr-beta-1.png" alt="Rhombic Shift Register β 1">
   <br>
   <em>Not final layout; misaligned elements to fix, etc.</em>
   </span>
