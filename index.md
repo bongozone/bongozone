@@ -3,6 +3,7 @@ layout: page
 permalink: /
 description: New tools for synthesis, blah blah
 ---
+
 <figure>
   <label for="mn-download" class="margin-toggle">Download</label>
   <input type="checkbox" id="mn-download" class="margin-toggle">
@@ -16,11 +17,19 @@ description: New tools for synthesis, blah blah
   <em>Not final layout; misaligned elements to fix, etc.</em>
   </span>
 </figure>
+
 <p>
-<span class="newthought">Pan-and-Shift</span> is a four-voice, voltage-controlled
-looping demultiplexed shift register for the <a href="http://www.vcvrack.com/">VCVRack</a> modular synthesis environment.
-By carefully applying modulation to the Pan-and-Shift, automatic variations upon
-melodic patterns may generated.
+<span class="newthought">Pan-and-Shift</span> is a four-voice, demuxing shift
+register for the <a href="http://www.vcvrack.com/">VCVRack</a> modular synthesis environment.
+By skillfully applying modulation, automatic variations upon
+source patterns may be generated. Using the Pan-and-Shift with a sequenced melody allows you to
+design complex arabesque patterns and arpeggiations.
+On the other hand, you need not need not use a sequencer or keyboard
+to play the Pan-and-Shift. Good results have been obtained with quantized stepped and random voltages,
+feedback patches and other unconventional sources.<label for="sn-westcoast" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-westcoast" class="margin-toggle">
+<span class="sidenote">
+ Commonly termed “West coast synthesis”
+</span>
 </p>
 
 ## Shift Registers
