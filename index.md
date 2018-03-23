@@ -74,9 +74,9 @@ e.g. the cell at the position pointed to by <em>length</em>
 </span> will be
 copied into the input, causing <em>looping</em>.
 
-By passing the width control counterclockwise, past 12 o'clock<label for="sn-neg" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-neg" class="margin-toggle"><span class="sidenote">
+By passing the width control counterclockwise, past 12 o'clock,<label for="sn-neg" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-neg" class="margin-toggle"><span class="sidenote">
   Or by applying modulation such that the summed <em>width</em> voltage is negative.
-</span>,
+</span>
 we engage <em>inverted channel width</em>. By doing so, the channel with grows inwards from
 the outer channels towards the center point.
 
@@ -112,6 +112,16 @@ scheme is novel to the best of my knowledge. The visual design attempts to draw 
   An interested reader may note that the <a href="http://gunkies.org/wiki/PDP-11/20">PDP 11/20</a> also featured <a href="http://gunkies.org/wiki/ASR33">ASRs</a>.
  </span>
  consoles.
+
+### About Pulsum Quadratum
+
+Pulsum Quadratum ("vibrating square"<label for="sn-vs" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-vs" class="margin-toggle">
+<span class="sidenote">
+  The <a href="https://nethackwiki.com/wiki/Vibrating_square">Vibrating Square</a>
+  is an element from <a href="https://en.wikipedia.org/wiki/NetHack">Nethack</a>.
+</span>
+ or "pulse wave") releases synthesizer
+projects by <a href="https://jonwillia.ms/">Jon Williams</a>.
 
 <!--
 <ul>
