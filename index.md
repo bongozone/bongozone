@@ -13,19 +13,21 @@ description: New tools for synthesis, blah blah
   <label for="mn-exports-imports" class="margin-toggle">Photos</label><input type="checkbox" id="mn-exports-imports" class="margin-toggle"><span class="marginnote">
   <img src="images/pan-and-shift-beta-1.png" alt="Pan-and-shift β 1">
   <br>
-  <em>Not final layout.</em>
+  <em>Not final layout; misaligned elements to fix, etc.</em>
   </span>
 </figure>
 <p>
-<span class="newthought">Pan-and-Shift</span> is a four voice, voltage-controlled
-looping shift register for the <a href="http://www.vcvrack.com/">VCVRack</a> modular synthesis environment.
+<span class="newthought">Pan-and-Shift</span> is a four-voice, voltage-controlled
+looping demultiplexed shift register for the <a href="http://www.vcvrack.com/">VCVRack</a> modular synthesis environment.
 By carefully applying modulation to the Pan-and-Shift, automatic variations upon
 melodic patterns may generated.
 </p>
 
 ## Shift Registers
 
-The Pan-and-Shift has 4 independent shift registers, denoted <strong>lanes</strong>. Each lane
+The Pan-and-Shift has 4 independent “analog” shift
+ registers<label for="sn-asr" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-asr" class="margin-toggle"><span class="sidenote">Familiarity with basic <a href="https://sites.google.com/site/westcoastsynthesis/asr">analog shift register</a> operation will help comprehension of this document.</span>,
+ denoted <strong>lanes</strong>. Each lane
 has two <strong>channels</strong>. The left-hand channel is intended for a pitch CV, for generating a melody.
 The right-hand channel may be utilized for a secondary modulation, or a pattern of gates.
 
@@ -36,13 +38,12 @@ value is greater than the left <em>length</em> value, the tap will be set to the
 of the lane. Independent values for the tap position and the lane length will be
 useful when utilizing the looping feature.
 
-## Pan and Scan Sections
+## Pan-and-Scan Sections
 
 Below the primary CV inputs there are two pan-and-scan<label for="sn-ps" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-ps" class="margin-toggle"><span class="sidenote">See Make Noise RxMx, Verbos Pan and Scan, Toppobrillo Mixiplexer, etc.</span>
-blocks, one for the channel inputs &amp; and one for the channel outputs. By adjusting the position of these knobs and applying
-modulation to the inputs, you may control which lanes are receiving input
-and which lanes are outputting. The state of each lane and its activity are
-indicated by the LEDs above and below each channel.
+blocks, for the lane inputs and outputs respectively. By adjusting the position of these knobs and applying
+modulation, you may control which lanes are receiving input and which lanes are outputting.
+The state of each lane and its activity are indicated by the LEDs above and below each channel.
 
 When neither the input the output nor the input of a lane is active, a clock trigger
 will not cause the state of a lane to change.<label for="sn-muted" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-muted" class="margin-toggle"><span class="sidenote">
@@ -56,7 +57,7 @@ e.g. the cell at the position pointed to by <em>length</em>
 copied into the input, causing <em>looping</em>.
 
 By passing the width control counterclockwise, past 12 o'clock<label for="sn-neg" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-neg" class="margin-toggle"><span class="sidenote">
-  Or applying modulation such that the summed <em>width</em> voltage is negative.
+  Or by applying modulation such that the summed <em>width</em> voltage is negative.
 </span>,
 we engage <em>inverted channel width</em>. By doing so, the channel with grows inwards from
 the outer channels towards the center point.
@@ -65,14 +66,14 @@ the outer channels towards the center point.
 
 The CV2 channel has three modes accessible from the panel switch:
 
-<span class="newthought">Gate</span> mode outputs a 10-volt gate if the value
+<span class="newthought">Gate</span> mode triggers a 10-volt gate if the value
 in the CV channel is high. When CV2 is normalled to the clock input, the CV2 channels
 will generate short trigger pulses instead of gates.
 
 <span class="newthought">Velocity</span> mode outputs the stored CV while the
 input clock is high. This is useful for generating a variable height modulation
 envelope with a slew limiter.<label for="sn-befaco" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-befaco" class="margin-toggle"><span class="sidenote">
-    The Slew Limiter and Rampage modules from Befaco are good candidate for this application in VCVRack.
+    The Slew Limiter and Rampage modules from Befaco are good candidates for this application in VCVRack.
 </span>
 
 <span class="newthought">CV</span> mode causes the right channel to operate identically
@@ -83,6 +84,16 @@ to the left-hand channel. This is useful for encoding a timbre parameter.
 CV2 and clock inputs are bidirectionally normalled to each other.
 <em>Width</em> and <em>center</em> modulation inputs are normalled downwards
 from the input block to the output block.
+
+## Design Notes
+
+Although the module takes inspiration from a number of existing designs, the overall
+scheme is novel to the best of my knowledge. The visual design attempts to draw on
+ elements from Digital Equipment Corporation's 1970s era minicomputer<label for="sn-dec" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-dec" class="margin-toggle"><span class="sidenote">
+  The color elements in this module are based on the <a href="https://en.wikipedia.org/wiki/PDP-11">PDP 11</a>.
+  An interested reader may note that the <a href="http://gunkies.org/wiki/PDP-11/20">PDP 11/20</a> also featured <a href="http://gunkies.org/wiki/ASR33">ASRs</a>.
+ </span>
+ consoles.
 
 <!--
 <ul>
