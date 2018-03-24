@@ -35,7 +35,7 @@ feedback patches and other unconventional sources.<label for="sn-westcoast" clas
 
 ## Shift Registers
 
-The Rhombic Shift Register has 4 independent shift
+The Rhombic Shift Register has four independent shift
  registers<label for="sn-asr" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-asr" class="margin-toggle"><span class="sidenote">Familiarity with basic <a href="https://sites.google.com/site/westcoastsynthesis/asr">analog shift register</a> operation will help comprehension of this document.</span>,
  denoted <strong>lanes</strong>. Each lane
 has two <strong>channels</strong>. The left-hand channel is intended for a pitch CV, for generating a melody.
@@ -69,8 +69,8 @@ will not cause the state of a lane to change.<label for="sn-muted" class="margin
 </span>
 
 When the input for a lane is disabled but the output is enabled, a clock pulse
-will advance the pattern normally, but the final memory cell of the lane<label for="sn-looping" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-looping" class="margin-toggle"><span class="sidenote">
-e.g. the cell at the position pointed to by <em>length</em>
+will advance the pattern normally, but the memory cell of the lane<label for="sn-looping" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-looping" class="margin-toggle"><span class="sidenote">
+e.g. the cell at the position pointed to by <em>tap</em>
 </span> will be
 copied into the input, causing <em>looping</em>.
 
