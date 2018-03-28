@@ -11,15 +11,16 @@
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
   <meta property="og:image" content="{{ "/images/rsr-beta-1.png" | prepend: site.baseurl | prepend: site.url }}" />
   <script language="javascript">
-      // Enforce SSL
-      (function (root) {
-        "use strict";
-        var h = root ? root.location.hostname : "",
-        p = root ? root.location.protocol : "";
-        if ("http:" === p && !(/^(localhost|127.0.0.1)/).test(h)) {
-          root.location.protocol = "https:";
-        }
-      }
-      ("undefined" !== typeof window ? window : this));
-    </script>
+	  // Enforce SSL
+	  (function (root) {
+		"use strict";
+		return; // tmp disbale
+		var h = root ? root.location.hostname : "",
+		p = root ? root.location.protocol : "";
+		if ("http:" === p && !(/^(localhost|127.0.0.1)/).test(h)) {
+		  root.location.protocol = "https:";
+		}
+	  }
+	  ("undefined" !== typeof window ? window : this));
+	</script>
 </head>
