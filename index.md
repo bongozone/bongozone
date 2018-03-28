@@ -103,7 +103,6 @@ CV2 and clock inputs are bidirectionally normalled to each other.
 <em>Width</em> and <em>center</em> modulation inputs are normalled downwards
 from the input block to the output block.
 
-
 ## Demos
 
 I've compiled a few demos from the development process.
