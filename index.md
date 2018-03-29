@@ -46,7 +46,12 @@ the <em>length</em> of the shift register. In the fully lowered position, there 
 stages. The right-hand slider moves the location of the tap or output. If the right <em>tap</em>
 value is greater than the left <em>length</em> value, the tap will be set to the last stage
 of the lane. Independent values for the tap position and the lane length will be
-useful when utilizing the looping feature.
+useful when utilizing the looping feature. In short:
+
+* The left hand slider controls the capacity of the shift register (length).
+* The right hand slider controls which step of the shift register is selected to play notes (tap).
+* When the shift register loops, the loop is fed from the final cell (length).
+* If the right hand control (tap) is set to a value greater than the left hand (length), the tap is set to the length – that is, there is no memory past the tap point.
 
 ## Outputs
 
