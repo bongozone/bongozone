@@ -7,8 +7,8 @@ permalink: /
   <label for="mn-download" class="margin-toggle">Download</label>
   <input type="checkbox" id="mn-download" class="margin-toggle">
   <span class="marginnote">
-  <a href="https://github.com/bongozone/bongozone.github.io/releases">Download time-limited beta version</a><br>
-  <em class="danger">requires VCVRack 0.6 built from Git; may not work with newer builds</em>
+  <a href="https://github.com/bongozone/bongozone.github.io/releases">Download beta version</a><br>
+  <em class="">requires VCVRack 0.6.x</em>
   </span>
   <label for="mn-exports-imports" class="margin-toggle">Photos</label><input type="checkbox" id="mn-exports-imports" class="margin-toggle"><span class="marginnote">
   <img src="images/rsr-beta-1.png" alt="Rhombic Shift Register β 1">
@@ -78,6 +78,13 @@ will advance the pattern normally, but the memory cell of the lane<label for="sn
 e.g. the cell at the position pointed to by <em>tap</em>
 </span> will be
 copied into the input, causing <em>looping</em>.
+
+Normal output and looping output correspond to magenta and amber LEDs respectively.
+The top block of LEDs only illuminate for activity momentarily; the bottom remain illuminated
+as long as a lane keepings sounding a note.<label for="sn-neg" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-neg" class="margin-toggle"><span class="sidenote">
+  Generally, corresponding to the pulse width of the input clock.
+</span>
+
 
 By passing the width control counterclockwise, past 12 o'clock,<label for="sn-neg" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-neg" class="margin-toggle"><span class="sidenote">
   Or by applying modulation such that the summed <em>width</em> voltage is negative.
