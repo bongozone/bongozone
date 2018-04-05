@@ -1,2 +1,5 @@
-<a href="https://github.com/bongozone/bongozone.github.io/releases">Download beta version</a><br>
-<em class="">requires VCVRack 0.6.x</em>
+{% assign last_release = site.releases | last %}
+{% include version.html version=last_release %}
+<p>
+<em>requires VCVRack 0.6.x</em>
+</p>

@@ -10,13 +10,12 @@ proprietary and some are open source.<label for="sn-opensource" class="margin-to
 </span>
 Currently, most of our modules are under active development.
 
-{% include download.html %}
 
 ## Modules
 
 <figure class="fullwidth modules">
 {% assign modules = site.modules | sort: "index", "last" %}
-{% for item in modules %}
+{% for item in site.modules %}
   {% capture status_class %}status-{{item.status}}{% endcapture %}
   {% capture green_class %}{% if item.green %}green{% endif %}{% endcapture %}
   {% assign content = item.content | strip | strip_newlines | strip %}
@@ -68,6 +67,10 @@ Currently, most of our modules are under active development.
 {% endfor %}
 </figure>
 
+
+## Download
+{% include download.html %}
+<a href="releases">Older releases</a>
 
 ## About
 

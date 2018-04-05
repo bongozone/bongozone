@@ -20,6 +20,9 @@ markdown: kramdown
 permalink: /:month-:day-:year/:title.html
 
 collections:
+  releases:
+    output: true
+    sort_by: date
   modules:
     output: true
     sort_by: index
@@ -34,3 +37,9 @@ defaults:
       status: unavailable
       green: false
       index: 100
+  - scope:
+      path: ""
+      type: releases
+    values:
+      plugin_slug: PulsumQuadratum
+      date: "2018-01-01"

@@ -1,0 +1,8 @@
+{% assign sorted = include.releases | reverse %}
+<ul>
+{% for version in sorted %}
+  <li>
+    {% include version.html version=version %}
+  </li>
+{% endfor %}
+</ul>
