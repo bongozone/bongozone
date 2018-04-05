@@ -17,6 +17,10 @@ td:first-child {
   font-weight: bolder;
 }
 
+.marginnote img {
+  max-height: 800px;
+}
+
 /*
 super black
 #101010

@@ -21,14 +21,22 @@ Currently, most of our modules are under active development.
   {% capture green_class %}{% if item.green %}green{% endif %}{% endcapture %}
   {% assign content = item.content | strip | strip_newlines | strip %}
   <div class="module {{status_class}} {{green_class}}">
-    <img src="/images/{{item.slug}}.png" alt="">
-    <h3>
-      {%if content != '' %}
+    {%if content != '' %}
       <a href="{{ item.url }}">
-      {{ item.title }}
+      <img src="/images/{{item.slug}}.png" alt="">
       </a>
       {% else %}
-      {{ item.title }}
+      <a href="{{ item.url }}">
+      <img src="/images/{{item.slug}}.png" alt="">
+      </a>
+      {% endif %}
+    <h3>
+      {%if content != '' %}
+        <a href="{{ item.url }}">
+        {{ item.title }}
+        </a>
+      {% else %}
+        {{ item.title }}
       {% endif %}
     </h3>
     <p>
@@ -67,7 +75,7 @@ Currently, most of our modules are under active development.
 
 Pulsum Quadratum ("vibrating square"<label for="sn-vs" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-vs" class="margin-toggle">
 <span class="sidenote">
-  The <a href="https://nethackwiki.com/wiki/Vibrating_square">Vibrating Square</a>
+  For those interested, the <a href="https://nethackwiki.com/wiki/Vibrating_square">Vibrating Square</a>
   is an element from <a href="https://en.wikipedia.org/wiki/NetHack">Nethack</a>.
 </span>
  or "pulse wave") releases synthesizer
