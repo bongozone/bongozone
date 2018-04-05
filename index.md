@@ -15,7 +15,7 @@ Currently, most of our modules are under active development.
 
 <figure class="fullwidth modules">
 {% assign modules = site.modules | sort: "index", "last" %}
-{% for item in site.modules %}
+{% for item in modules %}
   {% capture status_class %}status-{{item.status}}{% endcapture %}
   {% capture green_class %}{% if item.green %}green{% endif %}{% endcapture %}
   {% assign content = item.content | strip | strip_newlines | strip %}
