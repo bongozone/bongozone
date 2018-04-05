@@ -13,8 +13,24 @@ description: New tools for synthesis, blah blah
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://bongo.zone" # the base hostname & protocol for your site
 #twitter_username: bongo_zone
-#github_username: bongozone
+github_username: bongozone
 
 # Build settings
 markdown: kramdown
 permalink: /:month-:day-:year/:title.html
+
+collections:
+  modules:
+    output: true
+    sort_by: index
+
+defaults:
+  - scope:
+      path: ""
+      type: modules
+    values:
+      layout: module
+      license: commercial
+      status: unavailable
+      green: false
+      index: 100
