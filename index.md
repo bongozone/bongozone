@@ -26,9 +26,7 @@ Currently, most of our modules are under active development.
       <img src="/images/{{item.slug}}.png" alt="">
       </a>
       {% else %}
-      <a href="{{ item.url }}">
       <img src="/images/{{item.slug}}.png" alt="">
-      </a>
       {% endif %}
     <h3>
       {%if content != '' %}
