@@ -1,16 +1,22 @@
 {% assign version = include.version %}
 {% assign platforms = "Mac|Linux|Windows" | split: "|" %}
 {{ version.plugin_slug }}-{{ version.slug }} - {{ version.date | date: "%-d %B %Y" }}
+{% if version.expired  %}
+<div>
+  Release Expired
+</div>
+{% else %}
 <ul>
-{% for platform in platforms %}
-  {% assign short = platform | downcase | truncate: 3, "" %}
-  <li>
-    <a href="https://github.com/bongozone/bongozone.github.io/releases/download/{{version.slug}}/{{version.plugin_slug}}-{{version.slug}}-{{short}}.zip">
-      {{platform:}}
-    </a>
-  </li>
-{% endfor %}
+  {% for platform in platforms %}
+    {% assign short = platform | downcase | truncate: 3, "" %}
+    <li>
+      <a href="https://github.com/bongozone/bongozone.github.io/releases/download/{{version.slug}}/{{version.plugin_slug}}-{{version.slug}}-{{short}}.zip">
+        {{platform:}}
+      </a>
+    </li>
+  {% endfor %}
 </ul>
+{% endif %}
 <p>
   {{ version.content }}
 </p>
