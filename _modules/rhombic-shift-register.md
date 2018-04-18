@@ -81,17 +81,21 @@ the outer channels towards the center point.
 The CV2 channel has three modes accessible from the panel switch:
 
 <span class="newthought">Gate</span> mode triggers a 10-volt gate if the value
-in the CV channel is high. When CV2 is normalled to the clock input, the CV2 channels
-will generate short trigger pulses instead of gates.
+in the CV channel is high. The value at CV1 will only change if CV2 is high.
+
+When CV2 is normalled to the clock input, the CV2 channels
+will generate short trigger pulses instead of gates &amp; CV1 will always update.
+You may think of gate mode with normalling as a fourth mode - <span class="newthought">trigger</span> mode.
 
 <span class="newthought">Velocity</span> mode outputs the stored CV while the
 input clock is high. This is useful for generating a variable height modulation
 envelope with a slew limiter.<label for="sn-befaco" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-befaco" class="margin-toggle"><span class="sidenote">
     The Slew Limiter and Rampage modules from Befaco are good candidates for this application in VCVRack.
-</span>
+</span> The value at CV1 will only change if CV2 is high.
 
 <span class="newthought">CV</span> mode causes the right channel to operate identically
-to the left-hand channel. This is useful for encoding a timbre parameter.
+to the left-hand channel. This is useful for encoding a timbre parameter. Both
+channels will update when the shift register advances.
 
 ## Normalling
 
