@@ -100,12 +100,15 @@ switch light green, shadow
 }
 
 .module.status-beta {
-  background: #AEC156;
+  background: #5E6943;
 }
 
+.module.status-available {
+  background: #4D693C;
+}
 
 .module.status-unavailable {
-  background: #4D693C;
+  background: #82906F;
 }
 
 

@@ -46,12 +46,10 @@ Currently, most of our modules are under active development.
             <td>{{item.license}}</td>
           </tr>
         {% endif %}
-        {% if item.status != "unavailable" %}
-          <tr>
-            <td>Status</td>
-            <td>{{item.status}}</td>
-          </tr>
-        {% endif %}
+        <tr>
+          <td>Status</td>
+          <td>{{item.status}}</td>
+        </tr>
         {% if item.source %}
           <tr>
             <td>
@@ -70,7 +68,7 @@ Currently, most of our modules are under active development.
 
 ## Download
 {% include download.html %}
-<a href="releases">Older releases</a>
+<a href="releases">Release history</a>
 
 ## About
 

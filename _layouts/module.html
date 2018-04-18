@@ -4,11 +4,11 @@ layout: default
 
 <section>
 <figure>
-  {% if page.status == "beta" %}
+  {% if page.status == "available" %}
   <label for="mn-download" class="margin-toggle">Download</label>
   <input type="checkbox" id="mn-download" class="margin-toggle">
   <span class="marginnote">
-  Download {% include download.html %}
+  {% include download.html %}
   </span>
   {% endif %}
   <label for="mn-photo" class="margin-toggle">Photos</label><input type="checkbox" id="mn-photo" class="margin-toggle"><span class="marginnote">

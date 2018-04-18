@@ -44,3 +44,4 @@ defaults:
       plugin_slug: PulsumQuadratum
       date: "2018-01-01"
       expired: false
+      price: "$2"

@@ -3,6 +3,7 @@ description: Radio tuner for rtl-sdr USB dongles
 title: rtl-sdr Radio Tuner
 index: 15
 license: GPL-2.0
+status: beta
 source: https://github.com/bongozone/vcvrack-rtlsdr
 source_name: vcvrack-rtlsdr
 ---

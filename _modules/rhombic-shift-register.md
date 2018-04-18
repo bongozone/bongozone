@@ -1,6 +1,6 @@
 ---
 description: Complex shift register for algorithmic composition
-status: beta
+status: available 
 index: 10
 ---
 The <span class="newthought">Rhombic Shift Register</span> (RSR) is a four-voice, demuxing shift
