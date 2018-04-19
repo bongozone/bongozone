@@ -124,7 +124,9 @@ switch light green, shadow
     display: block;
     width: auto;
     max-width: auto;
-    max-width: 100%;
     min-height: auto;
+    min-width: 85%;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
