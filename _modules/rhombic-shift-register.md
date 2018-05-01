@@ -1,6 +1,6 @@
 ---
 description: Complex shift register for algorithmic composition
-status: available 
+status: available
 index: 10
 ---
 The <span class="newthought">Rhombic Shift Register</span> (RSR) is a four-voice, demuxing shift
@@ -20,7 +20,7 @@ feedback patches and other unconventional sources.<label for="sn-westcoast" clas
 ## Shift Registers
 
 The Rhombic Shift Register has four independent shift
- registers<label for="sn-asr" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-asr" class="margin-toggle"><span class="sidenote">Familiarity with basic <a href="https://sites.google.com/site/westcoastsynthesis/asr">analog shift register</a> operation will help comprehension of this document.</span>,
+ registers<label for="sn-asr" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-asr" class="margin-toggle"><span class="sidenote">Familiarity with basic <a href="http://www.serge-fans.com/wiz_cv_trig.htm">analog shift register</a> operation will help comprehension of this document.</span>,
  denoted <strong>lanes</strong>. Each lane
 has two <strong>channels</strong>. The left-hand channel is intended for a pitch CV, for generating a melody.
 The right-hand channel may be utilized for a secondary modulation, or a pattern of gates.
