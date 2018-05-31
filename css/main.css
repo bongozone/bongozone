@@ -103,6 +103,10 @@ switch light green, shadow
   background: #5E6943;
 }
 
+.module.status-alpha {
+  background: #DCF698;
+}
+
 .module.status-available {
   background: #4D693C;
 }
