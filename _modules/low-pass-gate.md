@@ -1,6 +1,6 @@
 ---
 description: 8 channels of Low Pass Gate w/ vactrol-style decay on the CV envelope.
-index: 20
+index: 35
 ---
 
 8 independent Low Pass Gates with an adjustable decay on the CV parameter.
